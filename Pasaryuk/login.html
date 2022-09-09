@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pasaryuk</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="login.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="LandingPage.html" class="fas fa-arrow-circle-left"></a>
+            <a href="LandingPage.html"><img class="leaf" src="leaf.png"></a>
+      <a href="LandingPage.html"><h1 style="font-family: 'Montserrat', sans-serif;">PASARYUK</h1></a>
+            </div>
+          
+          <div class="sign-up">
+            <p style="font-family: 'Open Sans', sans-serif;">Belum punya akun? <span><a href="daftar.html" style="color: black;">Sign Up</a></span></p>
+          </div>
+    </header>
+
+    <div class="login">
+        <div class="box-left">
+            <img class="loginwallpaper" src="loginimage.jpg"> 
+        </div>
+        <div class="box-right">
+            <h1 class="welcome" style="font-family: 'Montserrat', sans-serif;">Selamat Datang Kembali</h1>
+            <p class="description" style="font-family: 'Open Sans', sans-serif;">Silahkan isi untuk melanjutkan!</p>
+            <form action="LandingPage.html" method="get" onSubmit="validasi()" id="form-box">
+                <p>
+				    <input type="email" name="email" id="email" placeholder="      Masukkan Email" class="fontAwesome"/>
+                </p>
+                <p>
+				    <input type="password" name="password" id="password" placeholder="      Masukkan Password" class="fontAwesome" />
+                </p>
+                <p id="remember">
+                    <input type="checkbox" name="remember-me" id="remember" value="remember">Ingat saya
+                </p>
+            
+            <div class="btn">
+                <input type="submit" value="LOGIN" class="cta" style="font-family: 'Montserrat', sans-serif;">
+                <a href="#" class="forget" style="font-family: 'Open Sans', sans-serif;">LUPA PASSWORD?</a>
+            </div> 
+        </form> 
+        <p style="text-align: center;">Atau masuk dengan</p>
+            <div class="alternatif"> 
+                <a class="fa fa-google" href="#"></a>
+                <a class="fa fa-facebook" href="#"></a>
+                <a class="fa fa-apple" href="#"></a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Credits
+1.Image:<a href='https://www.freepik.com/vectors/home'>Home vector created by storyset - www.freepik.com</a>
+2.Logo:<a href="https://www.flaticon.com/free-icons/leaf" title="leaf icons">Leaf icons created by Roundicons - Flaticon</a>
+-->

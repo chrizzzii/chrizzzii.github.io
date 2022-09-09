@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Anti Mager</title>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <script type="module" src="timer.js"></script>
+    <script type='text/javascript' src='alarm.js'></script>
+    
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+   var OneSignal = window.OneSignal || [];
+    var initConfig = {
+        appId: "c7495754-d3c3-4c22-8c47-fd7308557e3b",
+        notifyButton: {
+            enable: true
+        },
+    };
+    OneSignal.push(function () {
+        OneSignal.SERVICE_WORKER_PARAM = {};
+        OneSignal.SERVICE_WORKER_PATH = '/OneSignalSDKWorker.js'
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = '/OneSignalSDKUpdaterWorker.js'
+        OneSignal.init(initConfig);
+    });
+</script>
+
+<!--alert("Jangan Lupa Ingat Waktu!");-->
+</head>
+
+<body>
+
+    <header>
+
+
+        <!--
+        <div class="navkiri">
+            <h1>Anti Mager</h1>
+        </div>
+
+        <div class="navkanan">
+            <ul>
+                <li><a href="#">Fitur 3</a></li>
+                <li><a href="#">Fitur 2</a></li>
+                <li><a href="#">Fitur 1</a></li>
+            </ul>
+        </div>
+   
+
+    <div class="line">
+            
+    </div>
+        -->
+
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#fit1" target="#fit1_blank">Floating Timer</a></li>
+                            <li><a href="#fit2" target="#fit2_blank">Alarm</a></li>
+                            <li><a href="#fit3" target="#fit3_blank">App Lock</a></li>
+                            <li><a href="#fit3" target="#fit3_blank">Integration App</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="judul">
+            <h1>Anti Mager</h1>
+        </div>
+
+
+    </header>
+
+    <div class="container">
+
+        <div class="isi">
+            <p class="p1">Ayo bangkit dari tempat tidur</p>
+            <h1 class="h1">Taklukan</h1>
+            <h1 class="h2">Duniamu!</h1>
+            <p class="p2">Memotivasi kamu agar tidak kecanduan Gadget</p>
+            
+            <a href="#fit1" class="a2">AYO MULAI!</a>
+
+        </div>
+
+        
+
+        <div class="gambar">
+            <img src="gambar/lp.png">
+        </div>
+
+        
+    </div>
+
+    <div class="layanan">
+        <h1 class="lay">Pilih Sesuai Keinginanmu!</h1>
+
+        <h1 class="lay1">FLOATING TIMER</h1>
+        <h1 class="lay2">ALARM</h1>
+
+        </div> 
+    
+
+    <div class="fitur">
+
+        <div class="timeri" id="fit1">
+        <div class="timer">
+            <span class="timer__part timer__part--minutes">00</span>
+            <span class="timer__part">:</span>
+            <span class="timer__part timer__part--seconds">00</span>
+            <button type="button" class="timer__btn"></button>
+        </div>
+        </div>
+        
+        
+        <div class="alarmi" id="fit2">
+        
+        <div class="alarm">
+    
+            <form action="" method="">
+                <div id="jsalarmclock">
+                <div><div class="leftcolumn">Current Time:</div> <span id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
+                <div><div class="leftcolumn">Set Alarm:</div> <span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
+                <div><div class="leftcolumn">Set Alarm Action:</div> <input type="text" id="musicloc" size="55" placeholder="Kamu ingin diingatkan menggunakan media apa?" /></div>
+                <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
+                </div>
+                </form>
+                <script type="text/javascript">
+
+                    jsalarm.init()
+                    
+                    </script>
+        </div>
+        </div>
+
+        </div>
+
+        <h1 class="lay3" id="fit3">APP LOCK DAN APP INTEGRASI COMING SOON</h1>
+</body>
+
+
+</html>

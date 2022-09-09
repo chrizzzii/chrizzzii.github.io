@@ -1,0 +1,13 @@
+Langkah untuk mengakses aplikasi PASARYUK
+1. Buka folder KelinganKoe_PASARYUK
+2. Klik 2x pada file LandingPage.html
+3. Lalu akses fitur dari aplikasi PASARYUK menggunakan navigasi yang terdapat di dalamnya.
+
+Catatan: Email dan Password untuk login di aplikasi PASARYUK
+[
+Email = yuk@gmail.com
+Password = yuklah
+]
+Atau dapat dilihat di dalam file login.js
+
+-Terima kasih-

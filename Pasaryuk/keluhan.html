@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keluhan | PASARYUK</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="keluhan.css">
+<script type="text/javascript" src="akun.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <div class="responsive-menu">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span></span>
+            <p class="resp-title">Menu</p>
+          </label>
+      
+          <ul class="list-menu" style="font-family: 'Montserrat', sans-serif;">
+            <li><a class="item-menu" href="katalog.html">Katalog Produk</a></li>
+            
+            <li><div class="dropdown"><a class="item-menu dropbtn">Download Aplikasi</a>
+              <div class="dropdown-content">
+                <script>
+                document.querySelector(".dropdown").addEventListener("click", function() {
+                    Swal.fire({
+  title: 'Segera Hadir',
+  icon: 'info',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+    'OK'
+})
+});
+               </script>
+                <a href="#">Android</a>
+                <a href="#">iOS</a>
+            </div></li>
+            <li><a class="item-menu" href="about.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+    
+        <div class="logo">
+          <a href="LandingPage.html"><img class="leaf" src="leaf.png"></a>
+          <a href="LandingPage.html"><h1 style="font-family: 'Montserrat', sans-serif;">PASARYUK</h1></a>
+          </div>
+        
+        <div class="rightside">
+            <a href="#" class="fas fa-bell search" onclick="searchbar()"></a>
+            <script>
+              document.querySelector(".search").addEventListener("click", function() {
+                  Swal.fire({
+      title: 'Tidak ada notifikasi',
+      icon: 'info',
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: false,
+      confirmButtonText:
+      'OK'
+      })
+      });
+             </script>
+          <div class="dropdownakun">
+            <button class="dropbtn"> <li class="fa fa-user"></li>
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-main">
+              <a href="akun.html">Dasbor</a>
+              <a href="LandingPage.html">Keluar</a>
+            </div>
+          </div> 
+          
+        </div>
+      </header>
+
+    <main>
+        <sidebar>
+            <ul>
+                <li><a href="akun.html" onclick="highlight(this);">Dasbor saya</a></li>
+                <li><a href="keluhan.html" id="default" class="highlight" onclick="highlight(this);">Keluhan</a></li>
+                <li><a href="LandingPage.html" onclick="highlight(this);">Keluar</a></li>
+            </ul>
+        </sidebar>
+        <div class="content">
+            <div class="grid-container">
+                <div class="item1">
+                    <h1 style="font-family: 'Montserrat', sans-serif;">Keluhan Pelanggan</h1>
+
+<script>
+    var toastMixin = Swal.mixin({
+    toast: true,
+    icon: 'success',
+    title: 'General Title',
+    animation: false,
+    position: 'top-right',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  });
+
+document.querySelector(".item1").addEventListener('click', function(){
+  Swal.fire({
+    toast: true,
+    icon: 'success',
+    title: 'Berhasil dikirim',
+    animation: false,
+    position: 'bottom',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+});
+</script>
+
+<textarea name="textarea" id="isikeluhan" cols="30" rows="10" placeholder="Ketik keluhan Anda di sini..."></textarea>
+<button id="kirim" style="font-family: 'Montserrat', sans-serif;">Kirim</button>
+
+
+<div class="output"></div>
+</div>
+</div>
+</div>
+    </main>
+
+
+</body>
+</html>

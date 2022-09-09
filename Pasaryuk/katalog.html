@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Katalog | PASARYUK</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="katalog.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="searchbar.js"></script>
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="responsive-menu">
+      <input id="menu_toggle" type="checkbox" />
+      <label class="menu_btn" for="menu_toggle">
+        <span></span>
+        <p class="resp-title">Menu</p>
+      </label>
+  
+      <ul class="list-menu">
+        <li><a class="item-menu" href="katalog.html">Katalog Produk</a></li>
+        
+        <li><div class="dropdown"><a class="item-menu dropbtn">Download Aplikasi</a>
+          <div class="dropdown-content">
+            <script>
+            document.querySelector(".dropdown").addEventListener("click", function() {
+                Swal.fire({
+title: 'Segera Hadir',
+icon: 'info',
+showCloseButton: true,
+showCancelButton: true,
+focusConfirm: false,
+confirmButtonText:
+'OK'
+})
+});
+           </script>
+            <a href="#">Android</a>
+            <a href="#">iOS</a>
+        </div></li>
+        <li><a class="item-menu" href="about.html">Tentang Kami</a></li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <a href="LandingPage.html"><img class="leaf" src="leaf.png"></a>
+      <a href="LandingPage.html"><h1>PASARYUK</h1></a>
+      </div>
+    
+    <div class="rightside">
+        <a href="#" class="fas fa-bell search"></a>
+        <script>
+          document.querySelector(".search").addEventListener("click", function() {
+              Swal.fire({
+  title: 'Tidak ada notifikasi',
+  icon: 'info',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+  'OK'
+  })
+  });
+         </script>
+      <div class="dropdownakun">
+        <button class="dropbtn"> <li class="fa fa-user"></li>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-main">
+          <a href="akun.html">Dasbor</a>
+          <a href="LandingPage.html">Keluar</a>
+        </div>
+      </div> 
+      
+    </div>
+  </header>
+
+  <div class="poster">
+    <div class="poster-content">
+      <div class="poster-content-text">
+          <h1>Produk Pilihan Terbaik</h1>
+          <p>Di setiap kategori</p>
+          <div class="cariproduk">
+              <i class="fa fa-search"></i>
+              <p>Mau cari apa?</p></div>
+          
+      </div>
+      <div class="poster-content-image">
+        <img class="posterimage" src="posterimage.png" alt="aplikasi belanja online">
+      </div>
+    </div>
+</div>
+
+<div class="kategori">
+
+    <div class="kategoriheader">
+        <p class="kategorikiri">Kategori</p>
+        <a href="#" class="kategorikanan">Lihat semua</a>
+    </div>
+    
+        <div class="kategoriisi">
+        <div class="kategorijenis">
+            <img class="cabbage" src="katalog/cabbage.png" style="cursor: pointer;">
+            <a href="#">Sayur</a>
+        </div>
+        <div class="kategorijenis">
+            <img class="fruits" src="katalog/fruits.png" style="cursor: pointer;">
+            <a href="#">Buah</a>
+        </div>
+        <div class="kategorijenis">
+            <img class="spices" src="katalog/spices.png" style="cursor: pointer;">
+            <a href="#">Bumbu</a>
+        </div>
+        <div class="kategorijenis">
+            <img class="ginger" src="katalog/ginger.png" style="cursor: pointer;">
+            <a href="#">Rempah</a>
+        </div>
+        <div class="kategorijenis">
+            <img class="wheat" src="katalog/wheat.png" style="cursor: pointer;">
+            <a href="#">Pertanian</a>
+        </div>
+        <div class="kategorijenis">
+            <img class="cow" src="katalog/cow.png" style="cursor: pointer;">
+            <a href="#">Peternakan</a>
+        </div>
+        <div class="kategorijenis">
+            <img class="drugs" src="katalog/drugs.png" style="cursor: pointer;">
+            <a href="#">Obat Herbal</a>
+        </div>
+        <div class="kategorijenis">
+            <img class="porcelain" src="katalog/porcelain.png" style="cursor: pointer;">
+            <a href="#">Kerajinan Tangan</a>
+        </div>
+    </div>
+</div>
+
+<div class="unggulan">
+
+    <div class="unggulanheader">
+        <p class="unggulankiri">Produk Unggulan</p>
+        <a href="#" class="unggulankanan">Lihat semua</a>
+    </div>
+
+    <div class="unggulanisi">
+        <div class="unggulanjenis">
+            <img class="unggulangambar apel" src="katalog/apel.png" style="cursor: pointer;">
+            <a href="apel.html">Apel Malang</a>
+            <p style="font-size: 20px; font-weight: 600; padding-top: 10px;">Rp 21.500,00</p>
+        </div>
+        <div class="unggulanjenis">
+            <img class="unggulangambar jamur" src="katalog/jamur.png" style="cursor: pointer;">
+            <a href="#">Jamur Kuping</a>
+            <p style="font-size: 20px; font-weight: 600; padding-top: 10px;">Rp 25.700,00</p>
+        </div>
+        <div class="unggulanjenis">
+            <img class="unggulangambar bumbu" src="katalog/bumbu.png" style="cursor: pointer;">
+            <a href="#">Paket Bumbu Dapur</a>
+            <p style="font-size: 20px; font-weight: 600; padding-top: 10px;">Rp 40.100,00</p>
+        </div>
+        <div class="unggulanjenis">
+            <img class="unggulangambar herbal" src="katalog/herbal.png" style="cursor: pointer;">
+            <a href="#">Rempah Herbal Rumahan</a>
+            <p style="font-size: 20px; font-weight: 600; padding-top: 10px;">Rp 52.600,00</p>
+        </div>
+</div>
+
+<div class="caribarang">
+    <div class="caribarangheader">
+        <p class="caribarangkiri">Pesanan</p>
+        <a href="#" class="caribarangkanan">Lihat semua</a>
+    </div>
+    <div class="testimoni">
+        <div class="testimoni-wrap">
+            <div class="testimoni-box">
+              <div class="testimoni-content">
+                <img src="quotation.png" class="quotation"></img>
+                <h1 class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut velit ea quos corporis, aliquid perspiciatis nesciunt placeat autem, mollitia vel dolor voluptatum quam architecto officiis sint! A harum voluptatibus veniam?</h1>
+                <div class="testimoni-profil">
+                  <h1 class="testimoni-profil-name">Asep</h1>
+                  <h2>Tingkat Kebutuhan</h2>
+                  <p class="star">★★★★☆</p>
+                </div>
+                <div class="testimoni-picture">
+                  <img class="testimoni-picture-man" src="man.png">
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="testimoni-wrap">
+                <div class="testimoni-box">
+                  <div class="testimoni-content">
+                    <img src="quotation.png" class="quotation"></img>
+                    <h1 class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut velit ea quos corporis, aliquid perspiciatis nesciunt placeat autem, mollitia vel dolor voluptatum quam architecto officiis sint! A harum voluptatibus veniam?</h1>
+                    <div class="testimoni-profil">
+                      <h1 class="testimoni-profil-name">Bagus</h1>
+                      <h2>Tingkat Kebutuhan</h2>
+                      <p class="star">★★★★☆</p>
+                    </div>
+                    <div class="testimoni-picture">
+                      <img class="testimoni-picture-man" src="man.png">
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="testimoni-wrap">
+                    <div class="testimoni-box">
+                      <div class="testimoni-content">
+                        <img src="quotation.png" class="quotation"></img>
+                        <h1 class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut velit ea quos corporis, aliquid perspiciatis nesciunt placeat autem, mollitia vel dolor voluptatum quam architecto officiis sint! A harum voluptatibus veniam?</h1>
+                        <div class="testimoni-profil">
+                          <h1 class="testimoni-profil-name">Caca</h1>
+                          <h2>Tingkat Kebutuhan</h2>
+                          <p class="star">★★★★★</p>
+                        </div>
+                        <div class="testimoni-picture">
+                          <img class="testimoni-picture-man" src="man.png">
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="testimoni-wrap">
+                        <div class="testimoni-box">
+                          <div class="testimoni-content">
+                            <img src="quotation.png" class="quotation"></img>
+                            <h1 class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut velit ea quos corporis, aliquid perspiciatis nesciunt placeat autem, mollitia vel dolor voluptatum quam architecto officiis sint! A harum voluptatibus veniam?</h1>
+                            <div class="testimoni-profil">
+                              <h1 class="testimoni-profil-name">Dimas</h1>
+                              <h2>Tingkat Kebutuhan</h2>
+                              <p class="star">★★★★★</p>
+                            </div>
+                            <div class="testimoni-picture">
+                              <img class="testimoni-picture-man" src="man.png">
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+  <div class="side-one">
+    <div class="company-profile">
+      <div class="logofooter">
+        <a href="LandingPage.html"><img class="leaffooter" src="leaf.png"></a>
+        <a href="LandingPage.html"><h1 style="font-family: 'Open Sans', sans-serif;">PASARYUK</h1></a>
+        </div>
+      <p>Pasaryuk adalah aplikasi belanja online khusus di daerah pedesaan. Misi dan Visi kami menjembatani produsen dan konsumen agar mendapatkan produk berkualitas terbaik</p>
+    </div>
+    <div class="service">
+      <h1>Layanan</h1>
+      <ul>
+        <li><a href="about.html">Mitra Perusahaan</a></li>
+      </ul>
+    </div>
+    <div class="about-company">
+      <h1>Tentang Kami</h1>
+      <ul>
+        <li><a href="about.html">Profil Perusahaan</a></li>
+        <li><a href="#">Kebijakan Privasi</a></li>
+        <li><a href="#">Syarat dan Ketentuan</a></li>
+      </ul>
+    </div>
+    <div class="help">
+      <h1>Bantuan</h1>
+      <ul>
+        <li><i class="fas fa-envelope"><a href="#" style="font-family: 'Open Sans', sans-serif; font-weight: normal;">cs@pasaryuk.com</a></i></li>
+        <li><i class="fa fa-whatsapp"><a href="#">+62 898-230-241</a></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="social-media">
+    <i class="fa fa-facebook"><a href="#"></a></i>
+    <i class="fa fa-twitter"><a href="#"></a></i>
+    <i class="fa fa-linkedin"><a href="#"></a></i>
+    <i class="fa fa-instagram"><a href="#"></a></i>
+    <i class="fa fa-youtube"><a href="#"></a></i>
+    <p>©2022 PT PASARYUK | All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+<!--
+    Icon:
+    https://www.flaticon.com/premium-icon/cabbage_3944129?term=vegetable&page=2&position=8&page=2&position=8&related_id=3944129&origin=search 
+    <a href="https://www.flaticon.com/free-icons/fruit" title="fruit icons">Fruit icons created by Talha Dogar - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/salt" title="salt icons">Salt icons created by Pause08 - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/rice" title="rice icons">Rice icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/ginger" title="ginger icons">Ginger icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/cow" title="cow icons">Cow icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/drug" title="drug icons">Drug icons created by Iconpro86 - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/handmade" title="handmade icons">Handmade icons created by ultimatearm - Flaticon</a>
+
+    Produk:
+    https://www.pngdownload.id/png-y750kr/
+    https://www.pngegg.com/id/png-yvbaj
+    https://www.pngdownload.id/png-upcih8/
+    <a href='https://pngtree.com/so/herbal'>herbal png from pngtree.com/</a>
+-->

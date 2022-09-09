@@ -1,0 +1,412 @@
+﻿/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+nav {
+    display: none;
+}
+
+/*FLOAT ADDITIONAL*/
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #006699;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-family: Poppins;
+    font-size: 15px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.link {
+    text-decoration: underline;
+    color: orange;
+    opacity: 0.9;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.link:link {
+    color: orange;
+}
+
+.link:visited {
+    color: orange;
+}
+
+.px-2 {
+    display: block;
+    line-height: 80px;
+    float: right;
+    width: 85%;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.px-3 {
+    display: block;
+    float: right;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.nav {
+    width: 100%;
+    height: 80px;
+}
+
+.nav h1 {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3399cc;
+    line-height: 80px;
+    float: left;
+    padding-left: 20px;
+}
+
+.nav p {
+    font-size: 15px;
+    font-family: Metropolis;
+    line-height: 80px;
+    padding-right: 100px;
+    float: right;
+    margin-right: -70px;
+}
+
+.container {
+    background-image: url(gambar/ct.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 700px;
+    padding-top: 250px;
+    text-align: center;
+}
+
+.container h1 {
+    font-family: Metropolis;
+    font-size: 35px;
+}
+
+.container h2 {
+    font-family: Metropolis;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+
+.container p {
+    font-family: Metropolis;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.layanan {
+
+    margin: 0 auto;
+    display: block;
+    font-family: Poppins;
+    padding-top: 10px;
+    width: 450px;
+    
+}
+
+.layanan1 {
+    font-size: 15px;
+    float: left;
+    padding-right: 40px;
+    padding-left: 30px; 
+}
+
+.layanan2 {
+    font-size: 15px;
+}
+
+.btn-wrapper {
+    transition: all 0.5s;
+}
+
+.btn {
+    background-color: royalblue;
+    box-shadow: 0 3px #213570;
+    /*ADD-ONS*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 8px
+}
+
+.btn:hover {
+    background-color: #304EA8;
+}
+
+.btn:active {
+    position: relative;
+    box-shadow: none;
+    top: 3px;
+}
+
+.berita {
+    background-repeat: no-repeat;
+    margin-top: -50px;
+}
+
+.berita h2 {
+    color: slateblue;
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: Metropolis;
+}
+
+.berita p {
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-family: Poppins;
+}
+
+.badan {
+    width: 100%;
+    margin: 30px auto;
+    color: white;
+
+}
+
+.card {
+    width: 23%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #006699;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+    float: left;
+}
+
+.card .header {
+    height: 300px;
+    background-color: white;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer {
+    width: 100%;
+    background: url(gambar/ft.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+.hubungi {
+    padding-left: 20px;
+    font-family: Poppins;
+    font-size: 15px;
+    width: 33%;
+    float: left;
+}
+
+legend {
+    font-family: Metropolis;
+    font-size: 25px;
+}
+
+#kirim {
+    margin-top: 10px;
+}
+
+.media {
+    margin: 0 5%;
+    font-family: Metropolis ;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    width: 20%;
+    float: right;
+}
+
+.media p {
+    font-size: 35px;
+}
+
+.media ul li{
+    font-size: 20px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.media ul li a{
+    color: blanchedalmond;
+}
+
+
+
+@media (min-width: 450px) and (max-width: 699px){
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #006699;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-family: Poppins;
+        font-size: 14px;
+        box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 1);
+    }
+
+    .container {
+        background-image: url(gambar/ct.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .container h1 {
+        width: 100%;
+        font-family: Metropolis;
+        font-size: 35px;
+    }
+
+
+
+.berita {
+    margin-top: -300px;
+}
+
+.badan {
+    width: 80%;
+    margin: 30px auto;
+    color: white;
+
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background-color: #006699;
+    overflow: hidden;
+    flex: 1;
+    float: left;
+}
+
+.card .header {
+    height: 300px;
+    background-color: white;
+}
+
+.card .header img {
+    margin-left: 50px;
+}
+
+}
+
+
+
+
+
+@media (min-width: 700px) and (max-width: 1100px){
+    .berita {
+        margin-top: -300px;
+    }
+
+    .badan {
+        width: 90%;
+        margin: 30px auto;
+        color: white;
+    
+    }
+
+    .card {
+        width: 100%;
+        border: 1px solid #999;
+        border-radius: 10px;
+        background-color: #006699;
+        overflow: hidden;
+        flex: 1;
+        float: left;
+    }
+
+}

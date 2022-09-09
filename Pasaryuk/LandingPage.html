@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pasaryuk</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="LandingPage.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="searchbar.js"></script>
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="responsive-menu">
+      <input id="menu_toggle" type="checkbox" />
+      <label class="menu_btn" for="menu_toggle">
+        <span></span>
+        <p class="resp-title" style="font-family: 'Open Sans', sans-serif;">Menu</p>
+      </label>
+  
+      <ul class="list-menu" style="font-family: 'Montserrat', sans-serif;">
+        <li><a class="item-menu" href="katalog.html">Katalog Produk</a></li>
+        
+        <li><div class="dropdown"><a class="item-menu dropbtn">Download Aplikasi</a>
+          <div class="dropdown-content">
+            <script>
+            document.querySelector(".dropdown").addEventListener("click", function() {
+                Swal.fire({
+title: 'Segera Hadir',
+icon: 'info',
+showCloseButton: true,
+showCancelButton: true,
+focusConfirm: false,
+confirmButtonText:
+'OK'
+})
+});
+           </script>
+            <a href="#">Android</a>
+            <a href="#">iOS</a>
+        </div></li>
+        <li><a class="item-menu" href="about.html">Tentang Kami</a></li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <a href="LandingPage.html"><img class="leaf" src="leaf.png"></a>
+      <a href="LandingPage.html"><h1>PASARYUK</h1></a>
+      </div>
+    
+    <div class="rightside">
+      <a href="#" class="fas fa-search search" onclick="searchbar()"></a>
+      <input type="text" value="" id="searchbarhidden" placeholder="Pencarian">
+      <a id="akun" class="login" href="login.html" style="font-family: 'Open Sans', sans-serif;">LOGIN</a>
+      <a class="fas fa-user login" id="akun-responsive" href="akun.html"></a>
+    </div>
+  </header>
+
+  
+  
+  <div class="landing-page">
+    <img class="lpimage" src="landingpage.png">
+    <div class="greetings">
+      <h1 class="greetings-h1">Belanja? ke PASARYUK aja</h1>
+      <p class="greetings-p1">Belanja langsung dari produsen kini dapat dilakukan dengan mudah hanya dengan satu klik saja. Kualitas terbaik dan terpercaya. </p>
+      <a href="daftar.html" class="lpbutton">BERGABUNG!</a>
+    </div>
+  </div>  
+  
+  <div class="steps">
+    <div class="steps-text">
+    <div class="text1">
+      <h1>Daftar</h1>
+      <p>Isi data diri anda</p>
+    </div>
+    <div class="text2">
+      <h1>Verifikasi</h1>
+      <p>Pesan verifikasi akan segera terkirim</p>
+    </div>
+    <div class="text3">
+      <h1>Akun berhasil dibuat</h1>
+      <p>Selamat! Akun anda siap digunakan</p>
+    </div>
+  </div>
+
+    <div class="steps-arrow">
+      <a href="#" id="arrow" class="fas fa-chevron-left"></a>
+      <a href="#" id="arrow" class="fas fa-chevron-right"></a>
+    </div>
+  </div>
+
+  <div class="promo">
+    <div class="promo-text">
+      <h1 class="promo-header">Daftar Sekarang Sebelum Terlambat</h1>
+      <div class="promo-banner">
+        <img class="bnimage" src="bannerimage1.png">
+        <div class="promo-banner-text">
+        <h1>Produsen</h1>
+        <p>Keuntungan menarik dan berlimpah setiap hari</p>
+      </div>
+      </div>
+      <div class="promo-banner">
+        <img class="bnimage" src="bannerimage2.png">
+        <div class="promo-banner-text">
+        <h1>Konsumen</h1>
+        <p>Potongan harga dan promo menarik setiap minggu</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="promo-img">
+      <img class="primage" src="promoimage.png">
+    </div>
+  </div>
+
+  <div class="rank">
+    <div class="rank-text">
+      <h1 style="font-family: 'Montserrat', sans-serif;">LEADERBOARD</h1>
+    </div>
+      <div class="rank-card">
+      <div class="rank-card-left">
+        <div class="card-header">
+          <img class="trophy" src="trophy.png">
+          <ul class="card-header-text">
+            <li><h1 class="card-header-text-h1" style="font-family: 'Open Sans', sans-serif;">TOP</h1></li>
+            <li><h2 class="card-header-text-h2" style="font-family: 'Montserrat', sans-serif;">Distributor</h2></li>
+          </ul>
+        </div>
+        <div class="card-profil">
+          <div class="card-personil">
+            <img class="man" src="man.png">
+            <h1 class="card-personil-h1">Chris</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">10k Points</h2></i>
+          </div>
+          <div class="card-personil">
+            <img class="man" src="man.png">
+            <h1 class="card-personil-h1">Putra</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">8k Points</h2></i>
+          </div>
+          <div class="card-personil">
+            <img class="woman" src="woman.png">
+            <h1 class="card-personil-h1">Putri</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">6k Points</h2></i>
+          </div>
+          <div class="card-personil">
+            <img class="woman" src="woman.png">
+            <h1 class="card-personil-h1">Lauren</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">4k Points</h2></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="rank-card-right">
+        <div class="card-header">
+          <img class="trophy" src="trophy.png">
+          <ul class="card-header-text">
+            <li><h1 class="card-header-text-h1">TOP</h1></li>
+            <li><h2 class="card-header-text-h2">Konsumen</h2></li>
+          </ul>
+        </div>
+        <div class="card-profil">
+          <div class="card-personil">
+            <img class="woman" src="woman.png">
+            <h1 class="card-personil-h1">Fina</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">11k Points</h2></i>
+          </div>
+          <div class="card-personil">
+            <img class="man" src="man.png">
+            <h1 class="card-personil-h1">Shandy</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">9k Points</h2></i>
+          </div>
+          <div class="card-personil">
+            <img class="man" src="man.png">
+            <h1 class="card-personil-h1">Adven</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">7k Points</h2></i>
+          </div>
+          <div class="card-personil">
+            <img class="woman" src="woman.png">
+            <h1 class="card-personil-h1">Dwi</h1>
+            <i class="fas fa-star"><h2 class="card-personil-h2">5k Points</h2></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="testimoni-header" style="font-family: 'Montserrat', sans-serif;">Apa Kata Mereka?<h1>
+  <div class="testimoni">
+    <div class="testimoni-wrap">
+      <div class="testimoni-box">
+        <div class="testimoni-content">
+          <img src="quotation.png" class="quotation"></img>
+          <h1 class="message">Belanja di sini sangat nyaman, harga dapat bersaing dengan di super market. Pembayarannya mudah dan juga terpercaya, bagus deh pokoknya.</h1>
+          <div class="testimoni-profil">
+            <h1 class="testimoni-profil-name">Alex</h1>
+            <h2>Karyawan Swasta</h2>
+            <p class="star">★★★★☆</p>
+          </div>
+          <div class="testimoni-picture">
+            <img class="testimoni-picture-man" src="man.png">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="testimoni-wrap">
+        <div class="testimoni-box">
+          <div class="testimoni-content">
+            <img src="quotation.png" class="quotation"></img>
+            <h1 class="message">Belanja di sini sangat nyaman, harga dapat bersaing dengan di super market. Pembayarannya mudah dan juga terpercaya, rekomen deh pokoknya.</h1>
+            <div class="testimoni-profil">
+              <h1 class="testimoni-profil-name">Baru</h1>
+              <h2>Pegawai Negeri Sipil</h2>
+              <p class="star">★★★★★</p>
+            </div>
+            <div class="testimoni-picture">
+              <img class="testimoni-picture-man" src="man.png">
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="testimoni-wrap">
+          <div class="testimoni-box">
+            <div class="testimoni-content">
+              <img src="quotation.png" class="quotation"></img>
+              <h1 class="message">Belanja di sini sangat nyaman, harga dapat bersaing dengan di super market. Pembayarannya mudah dan juga terpercaya, asik deh pokoknya.</h1>
+              <div class="testimoni-profil">
+                <h1 class="testimoni-profil-name">Caca</h1>
+                <h2>Ibu Rumah Tangga</h2>
+                <p class="star">★★★★☆</p>
+              </div>
+              <div class="testimoni-picture">
+                <img class="testimoni-picture-woman" src="woman.png">
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="testimoni-wrap">
+            <div class="testimoni-box">
+              <div class="testimoni-content">
+                <img src="quotation.png" class="quotation"></img>
+                <h1 class="message">Belanja di sini sangat nyaman, harga dapat bersaing dengan di super market. Pembayarannya mudah dan juga terpercaya, oke deh pokoknya.</h1>
+                <div class="testimoni-profil">
+                  <h1 class="testimoni-profil-name">Desi</h1>
+                  <h2>Influencer</h2>
+                  <p class="star">★★★★★</p>
+                </div>
+                <div class="testimoni-picture">
+                  <img class="testimoni-picture-woman" src="woman.png">
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="testimoni-wrap">
+              <div class="testimoni-box">
+                <div class="testimoni-content">
+                  <img src="quotation.png" class="quotation"></img>
+                  <h1 class="message">Belanja di sini sangat nyaman, harga dapat bersaing dengan di super market. Pembayarannya mudah dan juga terpercaya, keren deh pokoknya.</h1>
+                  <div class="testimoni-profil">
+                    <h1 class="testimoni-profil-name">Evo</h1>
+                    <h2>Pedagang</h2>
+                    <p class="star">★★★★☆</p>
+                  </div>
+                  <div class="testimoni-picture">
+                    <img class="testimoni-picture-man" src="man.png">
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="testimoni-wrap">
+                <div class="testimoni-box">
+                  <div class="testimoni-content">
+                    <img src="quotation.png" class="quotation"></img>
+                    <h1 class="message">Belanja di sini sangat nyaman, harga dapat bersaing dengan di super market. Pembayarannya mudah dan juga terpercaya, mantep deh pokoknya.</h1>
+                    <div class="testimoni-profil">
+                      <h1 class="testimoni-profil-name">Fifi</h1>
+                      <h2>Mahasiswa</h2>
+                      <p class="star">★★★★★</p>
+                    </div>
+                    <div class="testimoni-picture">
+                      <img class="testimoni-picture-woman" src="woman.png">
+                    </div>
+                  </div>
+                  </div>
+                </div>
+  </div>
+
+  <div class="poster">
+      <div class="poster-content">
+        <div class="poster-content-text">
+            <h1 style="font-family: 'Montserrat', sans-serif;" >Ayo Daftar Sekarang!</h1>
+            <p>Unduh aplikasi dan dapatkan promo menarik untuk pengguna baru</p>
+            <a href="#" onclick="alert('Segera Hadir!')"><img class="googleplay" src="googleplay.png" title="googleplaystore" alt="aplikasi e-commerce"></a>
+            <a href="#" onclick="alert('Segera Hadir!')"><img class="appstore" src="appstore.png" title="appstore" alt="aplikasi e-commerce"></a>
+        </div>
+        <div class="poster-content-image">
+          <img class="posterimage" src="posterimage.png" alt="aplikasi belanja online">
+        </div>
+      </div>
+  </div>
+
+  <footer>
+    <div class="side-one">
+      <div class="company-profile">
+        <div class="logofooter">
+          <a href="LandingPage.html"><img class="leaffooter" src="leaf.png"></a>
+          <a href="LandingPage.html"><h1 style="font-family: 'Open Sans', sans-serif;">PASARYUK</h1></a>
+          </div>
+        <p>Pasaryuk adalah aplikasi belanja online khusus di daerah pedesaan. Misi dan Visi kami menjembatani produsen dan konsumen agar mendapatkan produk berkualitas terbaik</p>
+      </div>
+      <div class="service">
+        <h1>Layanan</h1>
+        <ul>
+          <li><a href="about.html">Mitra Perusahaan</a></li>
+        </ul>
+      </div>
+      <div class="about-company">
+        <h1>Tentang Kami</h1>
+        <ul>
+          <li><a href="about.html">Profil Perusahaan</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat dan Ketentuan</a></li>
+        </ul>
+      </div>
+      <div class="help">
+        <h1>Bantuan</h1>
+        <ul>
+          <li><i class="fas fa-envelope"><a href="#" style="font-family: 'Open Sans', sans-serif; font-weight: normal;">cs@pasaryuk.com</a></i></li>
+          <li><i class="fa fa-whatsapp"><a href="#">+62 898-230-241</a></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social-media">
+      <i class="fa fa-facebook"><a href="#"></a></i>
+      <i class="fa fa-twitter"><a href="#"></a></i>
+      <i class="fa fa-linkedin"><a href="#"></a></i>
+      <i class="fa fa-instagram"><a href="#"></a></i>
+      <i class="fa fa-youtube"><a href="#"></a></i>
+      <p>©2022 PT PASARYUK | All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<!--Credits
+1.Landing Page Image: <a href='https://www.freepik.com/vectors/sale'>Sale vector created by pch.vector - www.freepik.com</a>
+2.Promotion Image: https://www.freepik.com/free-vector/online-shopping-banner-mobile-app-templates-concept-flat-design_11878916.html
+3.Promotion Banner: <a href='https://www.freepik.com/vectors/car'>Car vector created by jcomp - www.freepik.com</a>
+4.Card Icon: <a href="https://www.flaticon.com/free-icons/trophy" title="trophy icons">Trophy icons created by Freepik - Flaticon</a>
+5.Person Icon: <a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/person" title="person icons">Person icons created by Freepik - Flaticon</a>
+6.Leaderboard Icon: <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by flatart_icons - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/medal" title="medal icons">Medal icons created by Freepik - Flaticon</a>
+7.Quotation Icon: <a href="https://www.flaticon.com/free-icons/quotation-marks" title="quotation marks icons">Quotation marks icons created by Retinaicons - Flaticon</a>
+8.Poster:https://www.pngegg.com/en/png-iczcn
+<a href='https://www.freepik.com/vectors/sale'>Sale vector created by pch.vector - www.freepik.com</a>
+9.Footer Icon: <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by kornkun - Flaticon</a>
+
+-->

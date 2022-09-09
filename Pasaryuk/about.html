@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About | PASARYUK</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="searchbar.js"></script>
+<script src="https://kit.fontawesome.com/d11ee26e11.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="responsive-menu">
+      <input id="menu_toggle" type="checkbox" />
+      <label class="menu_btn" for="menu_toggle">
+        <span></span>
+        <p class="resp-title">Menu</p>
+      </label>
+  
+      <ul class="list-menu">
+        <li><a class="item-menu" href="katalog.html">Katalog Produk</a></li>
+        
+        <li><div class="dropdown"><a class="item-menu dropbtn">Download Aplikasi</a>
+          <div class="dropdown-content">
+            <script>
+            document.querySelector(".dropdown").addEventListener("click", function() {
+                Swal.fire({
+title: 'Segera Hadir',
+icon: 'info',
+showCloseButton: true,
+showCancelButton: true,
+focusConfirm: false,
+confirmButtonText:
+'OK'
+})
+});
+           </script>
+            <a href="#">Android</a>
+            <a href="#">iOS</a>
+        </div></li>
+        <li><a class="item-menu" href="about.html">Tentang Kami</a></li>
+      </ul>
+    </div>
+
+    <div class="logo">
+      <a href="LandingPage.html"><img class="leaf" src="leaf.png"></a>
+      <a href="LandingPage.html"><h1>PASARYUK</h1></a>
+      </div>
+    
+    <div class="rightside">
+        <a href="#" class="fas fa-bell search" onclick="searchbar()"></a>
+        <script>
+          document.querySelector(".search").addEventListener("click", function() {
+              Swal.fire({
+  title: 'Tidak ada notifikasi',
+  icon: 'info',
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText:
+  'OK'
+  })
+  });
+         </script>
+      <div class="dropdownakun">
+        <button class="dropbtn"> <li class="fa fa-user"></li>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-main">
+          <a href="akun.html">Dasbor</a>
+          <a href="LandingPage.html">Keluar</a>
+        </div>
+      </div> 
+      
+    </div>
+  </header>
+
+      <div class="grid-container">
+        <div class="item1">
+            <h1>Tentang Kami</h1>    
+            <p>Nama Aplikasi: Pasaryuk</p>
+        </div>
+        <div class="item2">
+            <h1>Profil Anggota Tim</h1>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="profil/Agustinus.jpeg" alt="profil" style="width:300px;">
+                  </div>
+                  <div class="flip-card-back">
+                    <ul>
+                      <li><p>Agustinus Adven C.</p></li>
+                      <li><p>Teknik Komputer</p></li>
+                      <li><p>Universitas Diponegoro</p></li>
+                    </ul>
+                    <a class="fa fa-instagram" href="https://www.instagram.com/advenchristo/"></a>
+                    <a class="fa fa-facebook" href="https://www.facebook.com/agustinus.advenchristo"></a>
+                    <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCCd0kKRC67H_95Bs4yIOcAQ"></a>
+                  </div>
+                </div>
+              </div>
+    </div>
+        <div class="item3">
+            <h1>Latar Belakang</h1>
+            <p>Melihat para pekerja di pedesaan seperti petani dan peternak, yang terkadang mereka mengalami kesulitan sangat menjual hasil produksi mereka dan menemui berbagai masalah. Maka dari itu saya mempunyai gagasan untuk mengatasi masalah tersebut dengan menjadi jembatan antar produsen dan konsumen agar tidak ada pihak yang merugikan produsen dan konsumen juga mendapat hasil terbaik karena membeli langsung dari tempat produksi.</p>
+        </div>
+        <div class="item4" id="mitra">
+            <h1 class="item4header">Mitra Kami</h1>
+            <img src="partnership/pasarjaya.png"> 
+            <img src="partnership/pasarmitratani.png"> 
+            <img src="partnership/pasarrakyat.png"> 
+            <img src="partnership/pasarid.png"> 
+            <img src="partnership/temanpasar.png">
+            <img src="partnership/akupetani.png"> 
+            <img src="partnership/pertanianindonesia.png"> 
+        </div>
+      </div>
+
+
+</body>
+</html>
+
+<!--Credits
+1. Partnership: https://www.google.com/url?sa=i&url=https%3A%2F%2Felhkpn.kpk.go.id%2Fportal%2Fuser%2Fpengumuman_lhkpn%2FWjI5bVJXbFNlVkJhVldaaVlXY3ZlR2xaTW1VNVowUnJTRXN6VlVZelkyc3plVEpLU0RKQ1VsQkJiR05UZUdSUlpHWk1ObEpZV1c4emJscEhjMlpUWXc9PQ%3D%3D&psig=AOvVaw1BulckJ7vS4exNrvt3mrwH&ust=1644928728866000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCMDcjJ-b__UCFQAAAAAdAAAAABAc
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pasarmitratani.com%2Fdaging-lamosir.html&psig=AOvVaw1BulckJ7vS4exNrvt3mrwH&ust=1644928728866000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCMDcjJ-b__UCFQAAAAAdAAAAABAW
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fpasar.id%2F&psig=AOvVaw1BulckJ7vS4exNrvt3mrwH&ust=1644928728866000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDcjJ-b__UCFQAAAAAdAAAAABAi
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ftemanpasar.com%2F&psig=AOvVaw1BulckJ7vS4exNrvt3mrwH&ust=1644928728866000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCMDcjJ-b__UCFQAAAAAdAAAAABAn
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fakupetaniindonesia.id%2F&psig=AOvVaw3__Yqccy4YZvtuPWAsHRFC&ust=1644929427733000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCKChz-ed__UCFQAAAAAdAAAAABAT
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.laluahmad.com%2F2021%2F06%2Flogo-kementerian-pertanian-ri-png.html&psig=AOvVaw1tqai1BPWv3UBBNjL3d5AH&ust=1644929595026000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCJCZ-sCe__UCFQAAAAAdAAAAABAD
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fsahabatumkm.id%2F&psig=AOvVaw3cr7tH7sKy6CYj0SEQdRm-&ust=1644935483983000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCMCw3a20__UCFQAAAAAdAAAAABAD
+
+--->

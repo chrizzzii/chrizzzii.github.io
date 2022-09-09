@@ -1,0 +1,13 @@
+Bahan yang digunakan untuk membangun Website Teman Membaca
+HTML = Hypertext Markup Language adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet. Ini dapat dibantu oleh teknologi seperti Cascading Style Sheets dan bahasa scripting seperti JavaScript dan VBScript.
+CSS = Cascading Style Sheet merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemograman.
+JAVASCRIPT = JavaScript adalah bahasa pemrograman tingkat tinggi dan dinamis. JavaScript populer di internet dan dapat bekerja di sebagian besar penjelajah web populer seperti Google Chrome, Internet Explorer, Mozilla Firefox, Netscape dan Opera. Kode JavaScript dapat disisipkan dalam halaman web menggunakan tag SCRIPT.
+
+VISUAL STUDIO CODE = Visual Studio Code adalah perangkat lunak penyunting kode-sumber buatan Microsoft untuk Linux, macOS, dan Windows. Visual Studio Code menyediakan fitur seperti penyorotan sintaksis, penyelesaian kode, kutipan kode, merefaktor kode, pengawakutuan, dan Git.
+Kami menggunakan VS Code karena GUI yang mudah dipahami dan efisien performanya
+GOOGLE CHROME = Google Chrome adalah peramban web lintas platform yang dikembangkan oleh Google. Peramban ini pertama kali dirilis pada tahun 2008 untuk Microsoft Windows, kemudian diporting ke Linux, macOS, iOS, dan Android yang menjadikannya sebagai peramban bawaan dalam sistem operasi. 
+Kami menggunakan google chrome karena mengikuti ketentuan lomba dan performanya yang efisien dan cepat.
+
+Nama Anggota:
+1. Agustinus Adven Christo
+2. Vairell Dimas Rizky Risano
